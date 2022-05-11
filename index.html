@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    header,section,article,aside,footer,main,a,button,input,textarea,img,nav,ul,ol,li,p,h1,h2,h3,h4,h5,h6,div,span{
+  margin   : 0;
+  padding  : 0;
+  /* 폰트 크기 상속 */
+  font-size: inherit;
+}
+body {margin: 0; padding: 0;background-color: #00ffd2;}
+.back {  margin: auto;
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         width: 300px;
+         height: 100px;
+    }
+    .wrap{
+        text-align: center;
+    }
+    .btn{
+        width: 100px;
+        height: 27px;
+    }
+</style>
+<div class="back">  
+    <div class="wrap">
+     <h2>Pinetree Company Family</h2>
+     <p id="demo">지현씨에게</p>
+     <button class="btn" type="button" onclick="myFunction()">CLICK</button>
+    </div>  
+</div> 
+
+<script>
+function myFunction() {
+   var letter = document.createElement("p");
+   var body = document.querySelector("body");
+    document.getElementById("demo").innerHTML = "연꾸 항상 감사했어요...";
+}
+</script>
+
+</body>
+</html> 
